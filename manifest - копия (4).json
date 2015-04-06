@@ -1,0 +1,24 @@
+﻿{
+	"manifest_version": 2,
+	"name": "СТАВЬ КЛАСС!",
+	"version": "0.1",
+	"icons": {"128": "stavklass-icon128.png"},
+	
+	 "content_scripts": [
+    {
+        "matches": ["http://vk.com/*", "https://vk.com/*"],
+        "js": ["vk-chrome-injector.js"]
+    }
+	],
+	
+	"web_accessible_resources": [
+								 "jquery.js", 
+								 "autocomplete.js", 
+								 "scrollock.js",
+								 "stavklassobject.js", 
+								 "stavklass.css", 
+								 "opacity.png", 
+								 "loading.gif", 
+								 "vk.js"
+								 ]
+}
